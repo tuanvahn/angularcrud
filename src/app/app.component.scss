@@ -1,0 +1,24 @@
+#content{
+    padding-bottom: 30px;
+    padding: 0;
+    .contentBox{
+        float: left;
+        width: 100%;
+        border: 1px solid lightcyan;
+    }
+h2{
+    padding: 20px;
+    margin:0;
+    background-color: lightcyan;
+    margin-bottom: 30px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+    h3{
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 20px;
+        color: teal;
+        text-transform: uppercase;
+    }
+}

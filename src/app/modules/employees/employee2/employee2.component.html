@@ -1,0 +1,65 @@
+<div class="commonForm col-sm-6">
+    <h3>Reactive form form</h3>
+    <form novalidate class="row" id="formAdd" [formGroup]="form" (ngSubmit)="createEmployee()">
+        <div class="col-md-12">
+            <div class="form-group row">
+                <label for="example-text-input" class="col-md-4 col-form-label">Họ tên <span
+                        class="red">*</span></label>
+                <div class="col-md-8">
+                    <input formControlName="hoten" class="form-control" type="text" id="hoten" name="hoten">
+                    <div class="form-control-feedback textDanger"
+                        *ngIf="form.controls.hoten.invalid && form.controls.hoten.touched">
+                        <div>Vui lòng nhập thông tin này.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="example-text-input" class="col-md-4 col-form-label">Email <span
+                        class="red">*</span></label>
+                <div class="col-md-8">
+                    <input formControlName="email" class="form-control" type="text" id="email" name="email">
+                    <div class="form-control-feedback textDanger"
+                        *ngIf="form.controls.email.invalid && form.controls.email.touched">
+                        <div>Vui lòng nhập thông tin này.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="example-text-input" class="col-md-4 col-form-label">Facebook</label>
+                <div class="col-md-8">
+                    <input formControlName="facebook" class="form-control" type="text" id="facebook" name="facebook">
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="example-text-input" class="col-md-4 col-form-label">Twitter</label>
+                <div class="col-md-8">
+                    <input formControlName="twiter" class="form-control" type="text" id="twitter" name="twitter">
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="example-text-input" class="col-md-4 col-form-label">Website</label>
+                <div class="col-md-8">
+                    <input formControlName="website" class="form-control" type="text" id="website" name="website">
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="example-text-input" class="col-md-4 col-form-label">Số điện thoại</label>
+                <div class="col-md-8">
+                    <input formControlName="dienthoai" class="form-control" type="text" id="dienthoai" name="dienthoai">
+                   
+                </div>
+            </div>
+
+            <div class="form-group row thaotac">
+                <div class="col-md-12 ">
+                    <button class="btn btn-primary" type="submit"><i class="fa fa-save"></i> Save</button> &nbsp;
+                    <!-- <a class="btn btn-primary" (click)="createAndupdate(employeeService.curentEmployee)" ><i class="fa fa-save"></i> Save</a> &nbsp; -->
+                    <a class="btn btn-danger" (click)="clearForm()"><i class="fa fa-trash"></i> Xóa</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

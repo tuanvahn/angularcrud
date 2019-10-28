@@ -1,0 +1,76 @@
+{
+  "Employee": [
+    {
+      "id": 1,
+      "hoten": "Vũ Thế Anh",
+      "email": "antuaslrr@gmail.com",
+      "facebook": "hnaousl",
+      "twiter": "anhtuasop",
+      "website": "tuankial.com",
+      "dienthoai": "098187341"
+    },
+    {
+      "id": 4,
+      "hoten": "Tô Hiến Pháp",
+      "email": "thanhtohien@gmail.com",
+      "facebook": "Thành Hiến",
+      "twiter": "hiến Tô",
+      "website": "tothanh.com.vn",
+      "dienthoai": "098934344"
+    },
+    {
+      "id": 5,
+      "hoten": "Chu Thị Hải",
+      "email": "haict@gmail.com",
+      "facebook": "Hải Chu",
+      "twiter": "Hải LalA",
+      "website": "haichu.net",
+      "dienthoai": "088783234"
+    },
+    {
+      "id": 6,
+      "hoten": "Ngô Gia Minh",
+      "email": "minhgiang@gmail.com",
+      "facebook": "Minh Gia",
+      "twiter": "Minh Ngô",
+      "website": "ngogiaminh.com",
+      "dienthoai": "098876215"
+    },
+    {
+      "id": 7,
+      "hoten": "Bùi Xuân Kiên",
+      "email": "kienbuixuan@gmail.com",
+      "facebook": "Kiên Bùi",
+      "twiter": "Kiên Xuân",
+      "website": "xuankienbui.vn",
+      "dienthoai": "090182321"
+    },
+    {
+      "id": 10,
+      "hoten": "Anhtuan Vu",
+      "email": "yeuthuong68@gmail.com",
+      "facebook": "kaosias",
+      "twiter": "áldjasao",
+      "website": "lạidsi",
+      "dienthoai": "0283232354"
+    },
+    {
+      "id": 11,
+      "hoten": "Dương Minh Trí",
+      "email": "triminh@gmail.com",
+      "facebook": "trí Minh",
+      "twiter": "MInh Trí",
+      "website": "tri.vn",
+      "dienthoai": "0989655"
+    },
+    {
+      "hoten": "Demo Reactive form",
+      "email": "yeuthuong68@gmail.com",
+      "facebook": "Form reactive",
+      "twiter": "Form reactive",
+      "website": "Formreactive.vn",
+      "dienthoai": "098928342",
+      "id": 12
+    }
+  ]
+}
