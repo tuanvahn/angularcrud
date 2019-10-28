@@ -1,27 +1,33 @@
-# CRUD
+*****Step by step
+1. CÀI ANGULAR
+npm install -g @angular/cli
+2.TẠO PROJECT
+ng new CRUD
+3. CÀI ĐẶT BOOTSTRAP
+npm install bootstrap -S
+Sau đó khai báo đường dẫn file css bootsrap vừa cài đặt vào trong angular.json
+4. TẠO MODULE CHO CÁC COMPONENT
+ng g module modules/employees --module=app
+Chứa các thành phần để thực hiện các chức năng
+Sau đó tại thư mục chung chứa các component có tên là "employees"
+5. TẠO CÁC COMPONENT
+Tiếp theo tạo các Component "employee", "employee-list" trong thư mục "employees"
+--- Component "employee" dùng để thực hiện thêm sửa xóa
+--- Component "employee-list" dùng để hiển thị dữ liệu
+Sau khi tạo xong các component, vào "app.componetn.html" để chỉnh sửa giao diện
+-- và hiển thị các selector của các component
+--- Trong "employees.module.ts" thêm thuộc tính "exports" các class component để sử dụng được ở Module khác
+6. TẠO CÁC TEMPALTE HIỂN THỊ TRANG INDEX
+--- Tạo giao diện trong các component ở file ".htnl"
+7. TẠO FILE JSON
+npm install json-server -g
+Sau đó tạo 1 file json có tên là "db.json" trong thư mục assets. File này chức dữ liệu dạng json của Project.
+--- Sau khi tạo xong file json, add giữ liệu demo đạng json theo các trường dữ liệu có trong form.
+ 8. XEM DỮ LIỆU FILE JSON VÀ ĐƯỜNG DẪN API ĐỂ XỬ LÝ DỮ LIỆU
+json-server --watch db.json lấy được API
+9. TẠO SERVICE
+Tạo thư mục SHARE để chứa SERVICE
+ng g service employee
+--- Chứa các hàm xử lý dữ liệu (thêm, sửa, xóa) được truyền vào từ view
+10. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.13.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

@@ -1,0 +1,63 @@
+<div class="col-sm-6 commonForm">
+  <h3>Template driven form</h3>
+  <form novalidate class="row" name="form" #form="ngForm"
+    (ngSubmit)="form.form.valid && createAndupdate(employeeService.curentEmployee)" id="formAdd">
+    <div class="col-md-12">
+      <div class="form-group row">
+        <label for="example-text-input" class="col-md-4 col-form-label">Họ tên <span class="red">*</span></label>
+        <div class="col-md-8">
+          <input class="form-control" type="text" id="hoten" #hoten="ngModel" name="hoten"
+            [ngModelOptions]="{standalone: true}" [(ngModel)]="employeeService.curentEmployee.hoten" required>
+          <div class="textDanger" *ngIf="hoten.touched && !hoten.valid">
+            <div *ngIf="hoten.errors['required']">Vui lòng nhập thông tin này.</div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-email-input" class="col-md-4 col-form-label">Email <span class="red">*</span></label>
+        <div class="col-md-8">
+          <input class="form-control" type="email" #email="ngModel" required name="email"
+            [ngModelOptions]="{standalone: true}" [(ngModel)]="employeeService.curentEmployee.email">
+          <div class="textDanger" *ngIf="email.touched && !email.valid">
+            <div *ngIf="email.errors['required']">Vui lòng nhập thông tin này.</div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-url-fb" class="col-md-4 col-form-label">Facebook</label>
+        <div class="col-md-8">
+          <input class="form-control" type="url" [(ngModel)]="employeeService.curentEmployee.facebook"
+            [ngModelOptions]="{standalone: true}">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-url-twt" class="col-md-4 col-form-label">Twitter</label>
+        <div class="col-md-8">
+          <input class="form-control" type="url" [(ngModel)]="employeeService.curentEmployee.twiter"
+            [ngModelOptions]="{standalone: true}">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-url-web" class="col-md-4 col-form-label">Website</label>
+        <div class="col-md-8">
+          <input class="form-control" type="url" [(ngModel)]="employeeService.curentEmployee.website"
+            [ngModelOptions]="{standalone: true}">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-tel-input" class="col-md-4 col-form-label">Điện thoại</label>
+        <div class="col-md-8">
+          <input class="form-control" type="tel" [(ngModel)]="employeeService.curentEmployee.dienthoai"
+            [ngModelOptions]="{standalone: true}">
+        </div>
+      </div>
+      <div class="form-group row thaotac">
+        <div class="col-md-12 ">
+          <button class="btn btn-primary" type="submit"><i class="fa fa-save"></i> Save</button> &nbsp;
+          <!-- <a class="btn btn-primary" (click)="createAndupdate(employeeService.curentEmployee)" ><i class="fa fa-save"></i> Save</a> &nbsp; -->
+          <a class="btn btn-danger" (click)="clearForm()"><i class="fa fa-trash"></i> Xóa</a>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

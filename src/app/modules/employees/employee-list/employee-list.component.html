@@ -1,0 +1,29 @@
+<table class="table-collapse">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Họ tên</th>
+            <th>Email</th>
+            <th>Điện thoại</th>
+            <th>Facebook</th>
+            <th>Twiter</th>
+            <th>Website</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor="let tmp of allEmployee; let i = index">
+                <td>{{i + 1}}</td>
+                <td>{{tmp.hoten}}</td>
+                <td>{{tmp.email}}</td>
+                <td>{{tmp.dienthoai}}</td>
+                <td>{{tmp.facebook}}</td>
+                <td>{{tmp.twiter}}</td>
+                <td>{{tmp.website}}</td>
+                <td class="thaotac">
+                    <a href="javascript:void(0)" style="color: royalblue;" (click)="EditEmployee(tmp)"><i class="fa fa-edit"></i></a>
+                    <a href="javascript:void(0)" style="color: red;" (click)="deleteEmployee(tmp.id)"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+    </tbody>
+</table>
