@@ -24,9 +24,7 @@ export class Employee2Component implements OnInit {
       dienthoai: new FormControl('', Validators.required),
     })
   }
-  onSubmit(){
-    console.warn();
-  }
+
   createEmployee(){
     this.employeeService.createEmployee(this.employeeService = this.form.value).subscribe();
   }
